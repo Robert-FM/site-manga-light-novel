@@ -1,0 +1,4 @@
+Coloque aqui as 22 imagens originais do Capítulo 1 usando os nomes:
+01.jpg, 02.jpg, 03.jpg ... 22.jpg
+
+O leitor reconhecerá os arquivos automaticamente.

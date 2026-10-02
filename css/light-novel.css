@@ -1,0 +1,247 @@
+/* Light Novel page */
+.novel-hero {
+  min-height: 720px;
+  padding: 150px clamp(24px, 8vw, 130px) 90px;
+  display: flex;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
+  background: radial-gradient(
+    circle at 76% 43%,
+    #1d485e 0,
+    #0d2735 24%,
+    #07131c 58%
+  );
+}
+.novel-hero:after {
+  content: "A";
+  position: absolute;
+  right: 8%;
+  top: 50%;
+  transform: translateY(-50%);
+  font:
+    500 min(38vw, 34rem)/0.8 Cinzel,
+    serif;
+  color: transparent;
+  -webkit-text-stroke: 1px rgba(226, 197, 138, 0.12);
+  pointer-events: none;
+}
+.novel-hero-content {
+  position: relative;
+  z-index: 1;
+  max-width: 680px;
+}
+.novel-hero h1 {
+  font: 500 clamp(70px, 9vw, 130px)/0.9 Cinzel;
+  margin: 20px 0 30px;
+  letter-spacing: 0.03em;
+}
+.novel-hero h1 em {
+  font-size: 0.48em;
+  color: var(--gold2);
+}
+.novel-hero p:not(.eyebrow) {
+  font:
+    18px/1.8 Georgia,
+    serif;
+  color: #c0c9cb;
+  max-width: 540px;
+}
+.novel-hero .actions {
+  justify-content: flex-start;
+  margin-top: 38px;
+}
+.novel-section {
+  background: var(--paper);
+  color: #17252d;
+}
+.novel-layout {
+  max-width: 1120px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: minmax(260px, 380px) 1fr;
+  gap: clamp(45px, 8vw, 110px);
+}
+.volume-cover {
+  aspect-ratio: 2/3;
+  background: radial-gradient(
+    circle at 55% 35%,
+    #315b6c 0,
+    #142d38 35%,
+    #07131c 78%
+  );
+  border: 1px solid rgba(211, 177, 105, 0.25);
+  display: grid;
+  place-items: center;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 0 25px 50px rgba(32, 35, 33, 0.2);
+}
+.volume-cover:before {
+  content: "✦";
+  font-size: 4rem;
+  color: #b89a5d;
+  opacity: 0.55;
+}
+.volume-cover:after {
+  content: "VOLUME 1";
+  position: absolute;
+  bottom: 2rem;
+  left: 0;
+  right: 0;
+  text-align: center;
+  font-family: Cinzel, serif;
+  letter-spacing: 0.25em;
+  color: #d7c49a;
+}
+.volume-info h2,
+.chapter h3 {
+  color: #17252d;
+}
+.volume-info h2 {
+  font: 500 clamp(2.2rem, 5vw, 4.2rem) Cinzel;
+  margin: 0.2rem 0 1rem;
+}
+.volume-info > p {
+  max-width: 650px;
+  color: #586265;
+  line-height: 1.8;
+}
+.status {
+  display: inline-flex;
+  gap: 0.6rem;
+  align-items: center;
+  margin: 1rem 0 2.5rem;
+  padding: 0.6rem 0.9rem;
+  border: 1px solid rgba(211, 177, 105, 0.25);
+  font-size: 0.76rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: #d1b77d;
+}
+.status i {
+  width: 0.45rem;
+  height: 0.45rem;
+  border-radius: 50%;
+  background: #c9a866;
+}
+.chapter-list {
+  border-top: 1px solid #c7beac;
+}
+.chapter {
+  display: grid;
+  grid-template-columns: 80px 1fr auto;
+  gap: 1.25rem;
+  align-items: center;
+  padding: 1.7rem 0;
+  border-bottom: 1px solid #c7beac;
+  text-decoration: none;
+  color: inherit;
+  transition: 0.25s;
+}
+.chapter:hover {
+  padding-left: 0.7rem;
+}
+.chapter-no {
+  font-family: Cinzel, serif;
+  color: #9f895d;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+}
+.chapter h3 {
+  font: 500 clamp(1.15rem, 2vw, 1.55rem) Cinzel;
+  margin: 0 0 0.35rem;
+}
+.chapter p,
+.novel-note {
+  color: #687173;
+}
+.chapter p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+.chapter-arrow {
+  font-size: 1.4rem;
+  color: #c9a866;
+}
+.novel-note {
+  margin-top: 2rem;
+  font-size: 0.85rem;
+  line-height: 1.7;
+}
+.back-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+  margin-top: 3rem;
+  border-top: 1px solid #c7beac;
+  padding-top: 24px;
+}
+.back-row a {
+  color: #c9a866;
+  text-decoration: none;
+  font-size: 0.82rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+@media (max-width: 760px) {
+  .novel-hero {
+    min-height: 680px;
+    padding-top: 125px;
+    align-items: flex-start;
+  }
+  .novel-hero:after {
+    font-size: 70vw;
+    right: -10%;
+    opacity: 0.45;
+  }
+  .novel-hero .actions {
+    justify-content: center;
+  }
+  .novel-layout {
+    grid-template-columns: 1fr;
+  }
+  .volume-cover {
+    max-width: 330px;
+    width: 100%;
+    margin: auto;
+  }
+  .volume-info {
+    text-align: center;
+  }
+  .chapter {
+    text-align: left;
+    grid-template-columns: 55px 1fr auto;
+  }
+  .back-row {
+    justify-content: center;
+  }
+}
+
+/* Center the light-novel hero content */
+.novel-hero {
+  text-align: center;
+  justify-content: center;
+}
+.novel-hero-content {
+  margin-inline: auto;
+}
+.novel-hero p:not(.eyebrow) {
+  margin-inline: auto;
+}
+.novel-hero .actions {
+  justify-content: center;
+}
+
+/* Use the same atmospheric background treatment as the manga hero. */
+.novel-hero:after {
+  content: "";
+  position: absolute;
+  inset: auto -10% -45% 30%;
+  height: 650px;
+  border: 1px solid rgba(201, 167, 106, 0.13);
+  border-radius: 50%;
+  transform: rotate(-12deg);
+  pointer-events: none;
+}

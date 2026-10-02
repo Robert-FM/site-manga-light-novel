@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta name="description" content="Leitor do mangá Aerathis — Capítulo 1." />
+    <title>Capítulo 1 — Aerathis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="reader-page">
+    <header class="reader-header">
+      <a class="brand" href="index.html">AERATHIS</a>
+      <div class="reader-title">
+        <small>MANGÁ • CAPÍTULO 01</small><b>O começo de uma jornada</b>
+      </div>
+      <a class="reader-close" href="manga.html">FECHAR ×</a>
+    </header>
+    <div class="reader-toolbar">
+      <button id="pagedBtn" class="active" type="button">Página</button
+      ><button id="verticalBtn" type="button">Vertical</button
+      ><button id="fullscreenBtn" type="button">Tela cheia</button
+      ><span class="reader-counter" id="counter">01 / 22</span>
+    </div>
+    <main>
+      <section class="reader-stage" id="pagedReader">
+        <button
+          class="reader-nav-btn reader-prev"
+          id="prevBtn"
+          aria-label="Página anterior"
+        >
+          &larr;
+        </button>
+        <div class="reader-sheet" id="sheet">
+          <div class="reader-placeholder">
+            <div class="page-no" id="placeholderNo">01</div>
+            <h2>Página do capítulo</h2>
+            <p>
+              Estrutura pronta para receber a arte original. Adicione
+              <strong>01.jpg</strong> até <strong>22.jpg</strong> em
+              <code>assets/manga/chapter-01/</code>.
+            </p>
+          </div>
+        </div>
+        <button
+          class="reader-nav-btn reader-next"
+          id="nextBtn"
+          aria-label="Próxima página"
+        >
+          &rarr;
+        </button>
+      </section>
+      <section
+        class="vertical-reader"
+        id="verticalReader"
+        aria-label="Leitura vertical"
+      ></section>
+      <p class="reader-help">
+        No computador: use <kbd>←</kbd> e <kbd>→</kbd> para navegar. O mangá
+        segue a orientação de leitura da direita para a esquerda.
+      </p>
+    </main>
+    <script src="js/reader.js"></script>
+  </body>
+</html>

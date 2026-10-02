@@ -1,0 +1,146 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width,initial-scale=1" />
+    <meta
+      name="description"
+      content="Aerathis — acompanhe os capítulos do mangá original."
+    />
+    <title>Mangá — Aerathis</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body class="manga-page">
+    <header class="site-header scrolled" id="top">
+      <a class="brand" href="index.html">AERATHIS</a
+      ><button
+        class="menu-toggle"
+        aria-label="Abrir menu"
+        aria-expanded="false"
+      >
+        <span></span><span></span>
+      </button>
+      <nav class="nav" aria-label="Navegação principal">
+        <a href="index.html">Início</a
+        ><a class="active" href="manga.html">Mangá</a
+        ><a href="light-novel.html">Light Novel</a
+        ><a href="apoiadores.html">Apoiadores</a>
+      </nav>
+    </header>
+    <main>
+      <section class="manga-hero">
+        <div class="manga-hero-art" aria-hidden="true">
+          <span class="moon"></span><span class="blade">&#10022;</span>
+        </div>
+        <div class="manga-hero-copy reveal">
+          <p class="eyebrow">AERATHIS • HISTÓRIA EM IMAGENS</p>
+          <h1>Mangá</h1>
+          <p>
+            Uma jornada para descobrir o que existe além do horizonte. Em um
+            mundo de povos, criaturas e mistórios, um menino sonha em descobrir
+            o que existe além de sua aldeia.
+          </p>
+          <div class="reading-note">
+            <span>&#10022;</span>
+            <div>
+              <strong>ORIENTAÇÃO DE LEITURA</strong
+              ><small>Os quadros são lidos da direita para a esquerda.</small>
+            </div>
+          </div>
+          <div class="actions manga-hero-actions">
+            <a class="btn btn-gold" href="#capitulos">Ver capítulos</a>
+            <a class="btn btn-ghost" href="light-novel.html">Ver light novel</a>
+          </div>
+        </div>
+      </section>
+      <section class="chapter-section section" id="capitulos">
+        <div class="chapter-heading reveal">
+          <div>
+            <span>CAPÍTULOS</span>
+            <h2>Comece a jornada</h2>
+          </div>
+          <p>Novos capítulos aparecerão aqui conforme a história avançar.</p>
+        </div>
+        <div class="chapter-carousel">
+          <button class="chapter-arrow chapter-prev" type="button" aria-label="Capítulo anterior">‹</button>
+          <div class="chapter-track">
+          <article class="chapter-card reveal" data-chapter-panel="1">
+          <div class="chapter-cover" aria-label="Capa conceitual do capítulo 1">
+            <div class="cover-frame">
+              <span>AERATHIS</span><b>01</b><small>CAPÍTULO</small>
+            </div>
+          </div>
+          <div class="chapter-info">
+            <div class="chapter-meta">
+              <span>CAPÍTULO 01</span><span>22 PÁGINAS</span>
+            </div>
+            <h3>O começo de uma jornada</h3>
+            <p>
+              O primeiro passo pelo mundo de Aerathis. Conheça o início da
+              aventura e entre na história desde o começo.
+            </p>
+            <div class="chapter-actions">
+              <a class="btn btn-gold" href="reader.html?chapter=1"
+                >Ler capítulo 1</a
+            </div>
+          </div>
+        </article>
+        <article class="chapter-card chapter-coming reveal" data-chapter-panel="2" hidden>
+          <div class="chapter-cover" aria-label="Capa do capítulo 2 em breve">
+            <div class="cover-frame"><span>AERATHIS</span><b>02</b><small>EM BREVE</small></div>
+          </div>
+          <div class="chapter-info">
+            <div class="chapter-meta"><span>CAPÍTULO 02</span><span>EM BREVE</span></div>
+            <h3>A jornada continua</h3>
+            <p>O próximo capítulo está sendo preparado. Em breve, uma nova parte da jornada estará disponível.</p>
+            <div class="chapter-actions"><button class="btn btn-gold" type="button" disabled>Em breve</button></div>
+          </div>
+        </article>
+          </div>
+          <button class="chapter-arrow chapter-next" type="button" aria-label="Próximo capítulo">›</button>
+          <div class="chapter-pagination">Capítulo <b>01</b> de 02</div>
+        </div>
+      </section>
+      <section class="manga-support">
+        <div class="reveal">
+          <span class="sigil">&#10022;</span>
+          <p class="eyebrow">APOIE A HISTÓRIA</p>
+          <h2>Ajude a jornada<br /><em>a continuar.</em></h2>
+          <p>
+            Aerathis é uma produção do canal Um Cara Qualquer com o apoio de sua
+            comunidade.
+          </p>
+          <div class="actions">
+            <a
+              class="btn btn-gold"
+              href="https://livepix.gg/umcaraqualquer"
+              target="_blank"
+              rel="noopener"
+              >Apoiar pelo LivePix</a
+            ><a class="btn btn-ghost" href="apoiadores.html"
+              >Nossos apoiadores</a
+            >
+          </div>
+        </div>
+      </section>
+      <nav class="page-nav" aria-label="Continuar explorando">
+        <a href="index.html"><small>VOLTAR</small><b>← Página inicial</b></a
+        ><a href="light-novel.html"
+          ><small>CONTINUE EXPLORANDO</small><b>Light Novel →</b></a
+        >
+      </nav>
+    </main>
+    <footer>
+      <a class="brand" href="index.html">AERATHIS</a>
+      <p>Um mundo a descobrir.</p>
+      <p class="copyright">© <span id="year"></span> Aerathis</p>
+    </footer>
+    <script src="js/main.js"></script>
+  </body>
+</html>
